@@ -5,7 +5,7 @@ from neural_network import NeuralNetwork
 def print_board(state):
     for row in state:
         print(" | ".join(row))
-        print("-" * 5)
+        print("-" * 9)
 
 def fitness_function(weights, game_state, minimax_level):
     network = NeuralNetwork(input_size=9, hidden_size=64, output_size=9, weights=weights)
